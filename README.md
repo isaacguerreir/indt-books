@@ -4,6 +4,10 @@
 
 A Aplicação pode ser vista ao vivo através deste link: http://indtbooks.surge.sh/
 
+## Requisitos
+
+É requisito para visualizar esta aplicação localmente ter instalado em seu computador Node.js. Caso você não tenha instalado em seu computador é só acessar este link e fazer download a versão LTS: https://nodejs.org/en/ 
+
 ## Etapas para instalar
 
 ``` bash
