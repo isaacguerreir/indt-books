@@ -15,25 +15,25 @@
       </v-text-field>
     </div>
 
-    <v-layout row mt-1>
-      <v-flex xs12 md3 lg2 sm5>
+    <v-layout wrap row mt-1>
+      <v-flex xs12 md3 lg2 sm3>
         <v-btn @click="openCreateAuthor" color="accent">
           <v-icon left dark>add</v-icon>
           Add Author
         </v-btn>
       </v-flex>
 
-      <v-flex xs12 md1 lg1 sm5>
+      <v-flex xs8 md1 lg1 sm1>
         <v-btn @click="orderAlpha" color="accent">
           <v-icon left dark>list</v-icon>
           {{ this.order === 'alpha' ? 'A-Z': 'Z-A' }}
         </v-btn>
       </v-flex>
 
-      <v-flex xs12 md7 lg7 sm1>
+      <v-flex xs0 md6 lg7 sm6>
       </v-flex>
 
-      <v-flex xs12 md2 lg2 right>
+      <v-flex xs4 md2 lg2 sm2 right>
         <v-select
             color="accent"
             :items="itemsByPage"
@@ -53,7 +53,7 @@
 
           <div slot="header">
             <div v-html="highlightSearch(`${author.firstName} ${author.lastName}`, author.seachIndex)"
-             class="headline"></div>  
+             class="headline"></div>
           </div>
 
           <v-card>
@@ -167,7 +167,7 @@
             </v-bottom-sheet>
             <v-list-tile v-for="item in authorBooks(author.id)" :key="item.title">
               <v-list-tile-content>
-                <v-list-tile-title v-text="item.title"></v-list-tile-title>
+                <v-list-tile-title v-text="`${item.title} - ISBN: ${item.isbn}`"></v-list-tile-title>
               </v-list-tile-content>
               <v-list-tile-action>
                 <v-btn @click="dialogDelete(item.id)" icon flat>

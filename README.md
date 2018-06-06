@@ -1,6 +1,8 @@
 # INDT-BOOKS
 
-> INDT-BOOKS é uma aplicação Single-Page Application (SPA) que utiliza a biblioteca Vue.js para a renderização de conteúdo dinâmico construído sobre uma API de livros e autores. 
+> INDT-BOOKS é uma aplicação Single-Page Application (SPA) com design responsivo que utiliza a biblioteca Vue.js para a renderização de conteúdo dinâmico construído sobre uma API de livros e autores. 
+
+A Aplicação pode ser vista ao vivo através deste link: http://indtbooks.surge.sh/
 
 ## Etapas para instalar
 
@@ -18,5 +20,5 @@ npm install
 npm start
 
 # buildar aplicação para produção numa versão minificada
-npm run build
+npm build
 ```
